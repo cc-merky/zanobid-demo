@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Clash Display'), url('../fonts/clash-display/ClashDisplayRegular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Clash Display'), url('../fonts/clash-display/ClashDisplayExtralight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Clash Display'), url('../fonts/clash-display/ClashDisplayLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Clash Display'), url('../fonts/clash-display/ClashDisplayMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Clash Display'), url('../fonts/clash-display/ClashDisplaySemibold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Clash Display'), url('../fonts/clash-display/ClashDisplayBold.woff') format('woff');
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body {
+    font-family: 'Clash Display', sans-serif;
+}
+
+.kab-midred, .highlight {
+    color: #FEC22D;
+}
+
+.kab-dark {
+    color: #102684;
+}
+
+.kab-darker {
+    color: #05165b;
+}
+
+.kab-darkest {
+    color: #011240;
+}
+
+.kab-bg-midred, button.kab-bg-midred, a.pay-card h5 span {
+    background: #FEC22D;
+    color: #000;
+}
+
+.kab-bg-dark {
+    background: #102684;
+}
+
+.kab-bg-darker {
+    background: #05165b;
+}
+
+.kab-bg-darkest, a.pay-card {
+    background: #011240;
+}
+
+.zano-bg-yellow {
+    background: #FEC22D;
+}
+
+.zano-bg-blue {
+    background: #37FFFD;
+}
+
+.zano-pink, .highlight-pink {
+    color: #FC0F48;
+}
+
+.amazon-primary-button, .kab-product .amazon-primary-button, .kab-product .amazon-primary-button:focus {
+    background: #37FFFD;
+    color: #000;
+}
+
+.amazon-secondary-button, .kab-product .amazon-secondary-button, .kab-product .amazon-secondary-button:focus {
+    background: #FEC22D;
+    color: #000;
+}
+
+.kab-header {
+    padding-bottom: 0.2rem;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%);
+    border-bottom: 2px solid #FEC22D;
+}
+
+.kab-header .navbar {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.kab-header .navbar-light .navbar-toggler {
+    border: 0;
+    padding-left: 0;
+    font-size: 1rem;
+    color: transparent;
+}
+
+.btn-close:focus, .btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+
+.kab-header a.sign-in {
+    text-decoration: none;
+    display: flex;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.kab-header a.sign-in span {
+    font-size: .9rem;
+    padding-right: .1rem;
+}
+
+.test-game .small {
+    line-height: 1.2;
+}
+
+.test-arrow.right-arrow {
+    bottom: 10rem;
+}
+
+.test-arrow.left-arrow {
+    bottom: 6rem;
+}
+
+.kab-product {
+    border: 0;
+    text-align: center;
+}
+
+.kab-product .prod-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 7rem;
+}
+
+.kab-product .prod-name, .kab-product .za-time, .kab-product .za-amount {
+    font-weight: 500;
+}
+
+.kab-tile-header {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kab-product-list .prod-name {
+    color: #007185;
+    font-size: .8rem;
+    margin-bottom: 0.1rem;
+}
+
+.kab-product-list .prod-date {
+    font-size: 0.7rem;
+    color: #565959;
+    margin: 0.1rem;
+}
+
+.kab-product .kab-winner {
+    font-size: .85rem;
+    line-height: 1.3;
+}
+
+#btn-back-to-top {
+    font-size: .75rem;
+    color: #fff !important;
+}
+
+.kab-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.kab-footer .footer-menu li {
+    margin-top: 1.2rem;
+}
+
+.kab-footer .language-currency a {
+    padding: 1rem;
+}
+
+.kab-footer .language-currency a .img-flag {
+    width: 1.3rem;
+    margin-top: -0.3rem;
+}
+
+.kab-footer .language-currency a span {
+    padding-left: 0.5rem;
+}
+
+.kab-footer .bottom-footer a {
+    color: #ccc;
+}
+
+.kab-footer .kab-socials a {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+}
+
+.kab-footer .kab-copyright {
+    font-size: .75rem;
+}
+
+.kab-footer .kab-copyright a {
+    padding: 0 0.5rem;
+}
+
+.premium-prod {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: .575em;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.kab-login {
+    border-radius: 0.3em;
+    zoom: 90%;
+}
+
+.kab-login .form-control:focus {
+    border-color: #ff9b00;
+    box-shadow: 0 0 0 0.25rem rgb(255 79 1 / 25%);
+}
+
+.kab-login .form-control, .kab-login .input-group-text {
+    border: 1px solid #000;
+}
+
+.kab-login a {
+    text-decoration: none;
+}
+
+.referral-wallet h1 {
+    font-size: 2.25em;
+    line-height: .9;
+}
+
+.referral-wallet .share-link {
+    border: 1px dotted;
+    font-size: 0.75em;
+    padding: 0.5em;
+    line-height: 1;
+}
+
+.referral-wallet .share-link a {
+    text-decoration: none;
+}
+
+.referral-wallet .share-link i {
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+}
+
+.referral-alert {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid lightgrey;
+}
+
+.referral-alert p {
+    line-height: 1.2;
+    margin: 0;
+}
+
+.bid-history {
+    border-top: 1px solid lightgray;
+}
+
+.bid-history h1 {
+    font-size: 2.25em;
+}
+
+.raffle-winner .kab-product {
+    margin-bottom: 0;
+}
+
+.menu-groups {
+    padding: 1rem;
+    border-top: 2px solid #ededed;
+}
+
+.menu-groups i {
+    padding-right: 1rem;
+    width: 2rem;
+}
+
+.inner-hero {
+    padding-top: 5rem;
+}
+.calenders{
+    display: flex;
+}
+.googlecalender{
+    max-width: 100%;
+}
+.applecalender{
+    width: 10rem;
+}
+.cal{
+    height: 19rem;
+    padding-left: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.countryCode input {
+    padding-left: clamp(70px, 30%, 100px) !important;
+}
+
+.countryCode .iti {
+    display: block;
+}
+
+.USSD-header h3 {
+    font-weight: 700;
+}
+
+#processPayment .modal-body {
+    background: #fafafa;
+}
+
+.za-top-up .underlined {
+    border-bottom: 1px dotted;
+    font-weight: 700;
+}
+
+.not-mtn, .not-mtn .kab-bg-darkest, .not-mtn a.pay-card {
+    background: #FFCB00;
+}
+
+.not-mtn .kab-footer .bottom-footer a, .not-mtn .za-white {
+    color: #000;
+}
+
+.kab-product button:hover, .purchase-product button:hover, .confirm-bid-button:hover, .test-game .btn:hover, .landing-banner .btn:hover {
+    color: #fff;
+    background: #ffae42;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.za-price del {
+    color: #183ee0;
+}

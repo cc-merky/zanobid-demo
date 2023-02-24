@@ -1,0 +1,138 @@
+@media only screen and (min-width: 540px) {
+.footer-links li {
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+.how-it-works .title {
+    padding-bottom: .5rem;
+}
+
+footer .socials {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+footer .copyright {
+    text-align: center;
+}
+
+.latest-winner .prod-name {
+    margin: 1.5rem 0 .3rem;
+    font-size: 1.2rem;
+}
+
+.richest .live-now .za-product h6 {
+    margin-top: 1.5rem;
+}
+
+.richest .live-now .za-product .za-name {
+    margin: .5rem 0;
+}
+
+.purchase-product .prod-name {
+    font-size: 1.2rem;
+}
+
+.purchase-product .za-bid-details li, .purchase-product button {
+    font-size: 1rem;
+}
+
+.za-product button:hover, .purchase-product button:hover, .confirm-bid-button:hover, .test-game .btn:hover, .landing-banner .btn:hover {
+    color: #fff;
+    background: #fb5801;
+}
+
+.za-product button.disabled:hover, .purchase-product button.disabled:hover {
+    background: #3c3c3c;
+}
+
+.za-profile .verified {
+    right: 9rem;
+}
+
+.za-ag.ag--1, .za-ag.ag--6, .za-ag.ag--8 {
+    background-size: contain;
+}
+
+footer.za-footer {
+    padding-bottom: 5rem;
+}
+
+.test-arrow.right-arrow {
+    right: 1.5rem;
+}
+
+.test-arrow.left-arrow {
+    left: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 540px) {
+.za-nav .abx {
+    margin-left: -25px;
+}
+
+.za-nav .navbar-nav {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.p-m-0 {
+    padding: 0;
+}
+
+.footer-links li {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+footer .copyright {
+    margin: 2rem 0;
+}
+
+.latest-winner {
+    font-size: .8rem;
+}
+
+.latest-winner .prod-name {
+    margin: 1rem 0 .3rem;
+}
+
+.history .latest-winner .prod-name {
+    margin: .8rem 0 0;
+}
+
+.inner-hero h1 {
+    font-size: 2rem;
+}
+
+.landing-banner {
+    min-height: 70vh;
+}
+
+.landing-products {
+    z-index: 0;
+    transform: scale(.4);
+    bottom: -5.5rem;
+    left: 6.2em;
+    opacity: 0.25;
+}
+
+.section-pd-higher {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+}
+
+@media only screen and (max-width: 380px) {
+body {
+    zoom: 90%;
+}
+}
+
+@media only screen and (max-width: 370px) {
+body {
+    zoom: 84%;
+}
+}

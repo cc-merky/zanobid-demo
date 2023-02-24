@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head w3-include-html="include/meta-tag.html"></head> 
+
+<body>
+    <div w3-include-html="include/header.html"></div>
+    <section class="za-top-up">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-4">
+                    <h4 class="main-title">How would you like to pay?</h4>
+                    <a href="#" data-bs-toggle="modal"
+                    data-bs-target="#processPayment" class="pay-card">
+                        <div class="row">
+                            <div class="col-11 my-auto">
+                                <h5>Subscribe using SMS</h5>
+                                <p>Text <span class="underlined">ZPAW50</span> to <span class="underlined">898</span></p>
+                            </div>
+                            <div class="col-1 p-0 my-auto"><svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.299072 11.8768L5.3863 6.78953L0.299072 1.72879L1.86233 0.165527L8.48633 6.78953L1.86233 13.4135L0.299072 11.8768Z" fill="#37475A"/></svg></div>
+                        </div>
+                    </a>
+                    <a href="#" data-bs-toggle="modal"
+                    data-bs-target="#processPayment" class="pay-card">
+                        <div class="row">
+                            <div class="col-11 my-auto">
+                                <h5>Subscribe using USSD</h5>
+                                <p>Dial <span class="underlined">*898*50#</span></p>
+                            </div>
+                            <div class="col-1 p-0 my-auto"><svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.299072 11.8768L5.3863 6.78953L0.299072 1.72879L1.86233 0.165527L8.48633 6.78953L1.86233 13.4135L0.299072 11.8768Z" fill="#37475A"/></svg></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="container">
+                <div class="modal" id="processPayment">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="section-pd">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center USSD-header">
+                                    <h3 class="highlight">Processing Payment</h3>
+                                    <p>Please wait while we process your payment.</p>
+                                </div>
+                                <img src="images/processing.gif" style="width: 240px;">
+                                <div class="col-12 text-center">
+                                    <button type="button" class="btn btn-danger za-bg-pink" data-bs-dismiss="modal">I have subscribed</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div w3-include-html="include/footer.html"></div>
+</body>
+
+<script src="js/bootstrap.min5.1.3.js"></script>
+<script src="js/font-awesome.js"></script>
+<script src="js/mad.js"></script>
+
+</html>

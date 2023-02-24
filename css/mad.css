@@ -1,0 +1,903 @@
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-light.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-light-italic.woff);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-italic.woff);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-medium.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-medium-italic.woff);
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-semibold.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-semibold-Italic.woff);
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-bold.woff);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: boing;
+    src: url(../fonts/boing/boing-bold-italic.woff);
+    font-weight: 900;
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body {
+    font-family: 'boing', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: 1;
+    background: #3c3c3c;
+}
+.section-pd {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.za-dark {
+    background: #12061e;
+}
+
+.za-bg-red {
+    background: #ea1c25;
+}
+
+.za-bg-pink {
+    background: #cc0479;
+}
+
+.za-bg-white {
+    background: #fff;
+}
+
+.za-bg-orange {
+    background: #fe9500;
+}
+
+.za-bg-teal {
+    background: #0e395d;
+}
+
+.highlight {
+    color: #ea1c25;
+}
+
+.za-blue {
+    color: #000048;
+}
+
+.za-white {
+    color: #fff;
+}
+
+.za-nav {
+    padding-bottom: 0;
+    width: 100%;
+    padding-top: .2rem;
+    z-index: 999;
+}
+
+.za-nav .abx .logo {
+    max-width: 2rem;
+}
+
+.za-coin {
+    margin: 0 -.2rem;
+}
+
+.za-coin svg {
+    width: 1rem;
+    position: relative;
+    top: -1px;
+}
+
+.za-nav .quick-links a {
+    text-align: center;
+    color: rgba(255,255,255,.5);
+}
+
+.za-nav .quick-links .active, .za-nav .quick-links a:hover {
+    background: #0a0310;
+    color: #ea1c25;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.za-nav .quick-links svg {
+    width: 1.8rem;
+    fill: currentColor;
+    padding: .1rem 0;
+    margin-bottom: -.3rem;
+}
+
+.za-nav .quick-links span {
+    font-size: .75rem;
+}
+
+.za-nav .quick-links span.navbar-toggler-icon {
+    font-size: 1rem;
+}
+
+.za-nav .navbar-toggler, .za-nav .navbar-toggler:focus {
+    border: 0;
+    outline: none;
+}
+
+.balance {
+    background: #ea1c25;
+    text-align: center;
+    font-size: .9rem;
+    width: 100%;
+    top: 3.2rem;
+    z-index: 999;
+}
+
+.balance p {
+    margin: 0;
+    padding: .1rem;
+}
+
+.balance a {
+    border-bottom: 1px dotted;
+}
+
+.abx-fixed-top {
+    padding-top: 4.7rem;
+}
+
+.warning {
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.warning h1 {
+    font-weight: 900;
+    letter-spacing: -.15rem;
+}
+
+.warning p {
+    margin: 0;
+}
+
+.za-product {
+    background: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+}
+
+.za-dark .za-product, .za-bg-teal .za-product {
+    border: 0;
+}
+
+.za-product h6 {
+    text-align: center;
+    font-size: .85rem;
+    padding: .4rem .4rem 0;
+    line-height: 1;
+}
+
+.za-product .prod-name {
+    font-weight: 700;
+    margin: 0;
+}
+
+.za-price del {
+    color: #b3b3b3;
+}
+
+.za-product .za-name {
+    font-size: .725rem;
+    padding: .2rem .4rem;
+    margin: 0;
+}
+
+.za-product .za-name span {
+    font-weight: 700;
+}
+
+.za-product button, .za-product button:focus {
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0 0 .4rem .4rem;
+    box-shadow: none;
+}
+
+.za-product button span.remaining-count, .za-product button:focus span.remaining-count {
+    font-weight: 400;
+    padding-left: .25rem;
+}
+
+.purchase-product button:focus {
+    color: #fff;
+}
+
+.za-product .za-time, .za-product .za-amount {
+    margin: 0;
+    font-weight: 900;
+}
+
+.za-product .za-time span, .za-product .za-amount span {
+    font-size: .5rem;
+    text-transform: uppercase;
+    bottom: .05rem;
+    position: relative;
+}
+
+.progress-line {
+    background: #89848f;
+    height: .2rem;
+}
+
+.progress-line .progress {
+    height: .2rem;
+    width: 80%;
+}
+
+.prod-img {
+    position: relative;
+}
+
+.prod-img .za-pills {
+    position: absolute;
+    bottom: 0;
+}
+
+.prod-img .za-pills li {
+    background: #fff;
+    border: 1px solid;
+    border-radius: 1rem;
+    font-size: .7rem;
+    margin: .2rem;
+    padding: .15rem .4rem 0;
+    font-weight: 700;
+}
+
+.how-it-works svg {
+    width: 2.4rem;
+}
+
+.how-it-works h6 {
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 1;
+    margin-top: .6rem;
+}
+
+.how-it-works .title {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-size: .7rem;
+    line-height: 1;
+    padding-top: .5rem;
+}
+
+.how-it-works .hw-icon {
+    position: relative;
+}
+
+.how-it-works .hw-icon .numbers {
+    position: absolute;
+    width: 1rem;
+    text-align: center;
+    border-radius: 100%;
+    height: 1rem;
+    font-size: .7rem;
+    z-index: 99;
+    right: 0;
+    top: -.15rem;
+    padding-top: .1rem;
+}
+
+footer.za-footer {
+    border-top: 2px solid #eeeeee;
+}
+
+footer .footer-links {
+    margin-top: 1.5rem;
+}
+
+footer .footer-links li a {
+    text-decoration: none;
+}
+
+footer .socials a {
+    padding: .5rem;
+}
+
+footer .socials a:hover svg, footer .footer-links li a:hover {
+    color: #ea1c25;
+}
+
+.latest-winner {
+    color: #3c3c3c;
+    border-bottom: 1px dotted #b0b8bc;
+}
+
+.latest-winner:nth-child(odd), .purchase-product:nth-child(odd) {
+    background: #ececec;
+}
+
+.latest-winner .prod-name {
+    font-weight: 700;
+}
+
+.latest-winner p {
+    margin-bottom: 0;
+}
+
+.latest-winner .za-name span, .latest-winner .za-phone {
+    font-weight: 700;
+}
+
+.latest-winner .za-date svg, .latest-winner .za-location svg {
+    width: .7rem;
+    position: relative;
+    bottom: .1rem;
+}
+
+.richest .live-now .za-product {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.richest .live-now .za-product h6 {
+    text-align: left;
+    padding: initial;
+    font-size: initial;
+    margin-top: .35rem;
+}
+
+.richest .live-now .dis-percentage {
+    padding: .2rem .4rem;
+    font-weight: 700;
+}
+
+.richest .live-now .za-bid-details li {
+    font-size: .75rem;
+    margin-right: .35rem;
+}
+
+.richest .live-now .za-product .za-name {
+    font-size: .85rem;
+    margin: .15rem 0;
+    padding: initial;
+}
+
+.richest .live-now .za-product button, .richest .live-now .za-product button:hover, .richest .live-now .za-product button:focus {
+    border-radius: .4rem;
+}
+
+.richest .live-now .progress-line, .richest .live-now .progress-line .progress {
+    height: .4rem;
+}
+
+.richest .live-now .prod-img .za-pills {
+    bottom: .5rem;
+    left: .7rem;
+}
+
+.za-ranking {
+    background: #fff;
+    border-top: 1px dotted#3c3c3c;
+}
+
+.za-ranking .title {
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.za-ranking form {
+    margin-bottom: .5rem;
+}
+
+.za-ranking form .form-control, .za-ranking form .input-group-text {
+    font-size: .8rem;
+    box-shadow: none;
+}
+
+.rank-body {
+    color: #3c3c3c;
+    font-size: .9rem;
+    border-bottom: 1px dotted #ececec;
+    padding: .2rem 0;
+}
+
+.rank-body svg {
+    height: .7rem;
+    position: relative;
+    bottom: .1rem;
+}
+
+.rank-number {
+    text-align: center;
+}
+
+.rank-header {
+    background: #ececec;
+    font-size: .7rem;
+    font-weight: 700;
+    padding: .3rem 0 .2rem;
+}
+
+.coming-soon {
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+}
+
+.rank-body.my-rank {
+    color: #fff;
+    background-color: #000048;
+    border: 1px solid transparent;
+    box-shadow: rgb(0 0 72 / 50%) 0px 10px 40px -10px;
+}
+
+.history .nav-link {
+    text-transform: uppercase;
+    letter-spacing: .07rem;
+    font-size: .7rem;
+    border-left: 1px solid #ececec;
+}
+
+.history li:first-child .nav-link {
+    border-left: none;
+}
+
+.history .nav-link.active {
+    border-bottom: 2px solid #ea1c25;
+}
+
+.history #pills-tab.nav li {
+    width: 25%;
+    text-align: center;
+}
+
+.purchase-product {
+    border-bottom: 1px dotted #b0b8bc;
+}
+
+.purchase-product .za-bid-details li {
+    font-size: .85rem;
+    margin-right: .35rem;
+}
+
+.purchase-product .za-bid-details li:last-child {
+    margin-right: 0;
+    margin-top: -.1rem;
+}
+
+.purchase-product .za-spent {
+    background: #ffcfd1;
+    padding: .2rem .4rem;
+    font-weight: 700;
+    font-size: 90%;
+}
+
+.purchase-product button {
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.purchase-product .expiry-date {
+    font-size: .75rem;
+    margin: 0;
+    text-align: center;
+}
+
+.purchase-product .prod-img {
+    min-height: 8rem;
+    background: url(../images/product.png) center;
+    background-size: cover;
+}
+
+.purchase-product .prod-name {
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+
+.last20-bids {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+    text-align: center;
+    background: rgb(0 0 0 / 40%);
+}
+
+.last20-bids button {
+    top: 40%;
+    position: relative;
+    z-index: 999;
+    border-radius: .4rem;
+}
+
+.filter-products select {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.filter-products select:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+.za-ag {
+    background: #b0b8bc;
+    width: 100%;
+    z-index: 99;
+}
+
+.za-ag.ag--1 {
+    background: url(../images/agz/ag1.jpg) center;
+    background-size: cover;
+    height: 3.5rem;
+    position: fixed;
+    bottom: 0;
+}
+
+.za-product .za-ag {
+    display: block;
+    border-radius: .4rem;
+}
+
+.za-ag.ag--2 {
+    background: url(../images/agz/ag2.jpg) center;
+    background-size: cover;
+    height: 18.5rem;
+}
+
+.za-ag.ag--3 {
+    background: url(../images/agz/ag3.jpg) center;
+    background-size: cover;
+    height: 17.2rem;
+}
+
+.za-ag.ag--4 {
+    background: url(../images/agz/ag4.jpg) center;
+    background-size: cover;
+    height: 18.5rem;
+}
+
+.za-ag.ag--5 {
+    background: url(../images/agz/ag5.jpg) center;
+    background-size: cover;
+    height: 17.2rem;
+}
+
+.za-ag.ag--6 {
+    background: url(../images/agz/ag6.jpg) center;
+    background-size: cover;
+    height: 4rem;
+    border-radius: 0;
+}
+
+.za-ag.ag--7 {
+    background: url(../images/agz/ag7.jpg) center;
+    background-size: cover;
+    height: 17.2rem;
+}
+
+.za-ag.ag--8 {
+    background: url(../images/agz/ag8.jpg) center;
+    background-size: cover;
+    height: 4rem;
+    border-radius: 0;
+}
+
+.za-profile .letter {
+    height: 6rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: .5rem;
+    margin: 1rem 0;
+}
+
+.za-profile .balance-coin {
+    font-weight: 100;
+    margin: 0;
+}
+
+.za-profile .za-coin svg {
+    width: 2.5rem;
+    top: -.3rem;
+}
+
+.za-profile .verified {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 99;
+}
+
+.za-profile .verified svg {
+    width: 2rem;
+}
+
+.USSD-header h1 {
+    font-weight: 700;
+}
+
+.USSD-header .underlined {
+    border-bottom: 1px dotted;
+    font-weight: 700;
+}
+
+.bid2win .za-product.ag {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.USSD-category:nth-child(odd) {
+    background: #fff;
+}
+
+.after-game .modal h2 {
+    font-weight: 700;
+}
+
+.after-game .modal .modal-body .USSD-category .col-6:nth-child(odd) {
+    padding-left: .5rem;
+}
+
+.after-game .modal .modal-body .USSD-category .col-6:nth-child(even) {
+    padding-right: .5rem;
+}
+
+.how-it-works .title span {
+    text-transform: initial;
+    font-weight: 700;
+    letter-spacing: initial;
+    font-size: .85rem;
+}
+
+.inner-hero {
+    position: relative;
+    background-color: #343a40;
+    background: url("../images/za-hero-bkg.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+}
+
+.inner-hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.inner-body {
+    padding: 40px 10px 100px;
+}
+
+.inner-body.faq h4 {
+    font-weight: 900;
+}
+
+.inner-body .zipCoin {
+    height: 24px;
+    position: relative;
+    top: -2px;
+}
+
+.za-top-up {
+    padding: 6rem 0 2rem;
+}
+
+a.pay-card {
+    background: #000048;
+    display: block;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    margin-bottom: .5rem;
+}
+
+.bank-details {
+    background: #e5e5ff;
+    color: initial;
+    border-radius: 1rem;
+    padding: .75rem;
+    margin: .5rem 0 0;
+}
+
+a.pay-card h5 {
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+
+a.pay-card h5 span {
+    font-size: .6rem;
+    background: #ea1c25;
+    padding: 0.2rem;
+    color: #ffbbbe;
+    position: relative;
+    bottom: 0.2rem;
+    left: 0.2rem;
+}
+
+a.pay-card p {
+    font-size: .85rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+a.pay-card .bank-details p {
+    line-height: .75;
+}
+
+a.pay-card .bank-details h5 {
+    margin-bottom: .5rem;
+}
+
+.bank-details .btn {
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-icon {
+    padding: 0;
+}
+
+.main-title {
+    font-weight: 700;
+}
+
+.preferred-amount .btn{
+    font-weight: 700;
+    color: #fff;
+    border-color: #ea1c25;
+}
+
+.za-profile a.pay-card {
+    margin-top: 1rem;
+}
+
+.network-error {
+    margin-bottom: 6rem;
+}
+
+.network-error svg {
+    width: 10rem;
+}
+
+.confirm-bid-button, .confirm-bid-button:focus {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+a.za-white:hover {
+    color: #fff;
+}
+
+.za-bg-teal.with-test-arrows {
+    position: relative;
+}
+
+.test-arrow {
+    width: 24%;
+    position: absolute;
+}
+
+.test-arrow.right-arrow {
+    bottom: 5rem;
+    right: .25rem;
+}
+
+.test-arrow.left-arrow {
+    bottom: 1rem;
+    left: .25rem;
+}
+
+.test-arrow p.small {
+    line-height: 1.3;
+    margin: 0;
+}
+
+.landing-banner {
+    min-height: 80vh;
+    background-image: url(../images/web-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.landing-banner .logo {
+    width: 4rem;
+}
+
+.landing-products {
+    position: absolute;
+    z-index: 9999999999;
+    transform: scale(0.65);
+    left: .75rem;
+    bottom: -7.5rem;
+}
+
+.section-pd-higher {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.landing-how-to-win .hw-icon svg {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.landing-list li {
+    margin-bottom: 0.5rem;
+}
+
+.landing-how-to-win .hw-icon .numbers {
+    position: absolute;
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 100%;
+    height: 1.5rem;
+    font-size: 1rem;
+    z-index: 5;
+    left: 4.5rem;
+    padding-top: 0.1rem;
+}
+
+.raffle-draw .rolling {
+    opacity: .25;
+}

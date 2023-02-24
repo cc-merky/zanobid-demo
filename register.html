@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head w3-include-html="include/meta-tag.html"></head> 
+
+<body class="kab-bg-darkest">
+    <section class="section-pd">
+        <div class="section-pd text-center"><a href="/"><img src="images/logo-light.png" srcset="images/logo-light-2x.png 2x"
+                    alt="zanobid"></a></div>
+        <div class="">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-11">
+                        <div class="za-bg-white p-3 kab-login">
+                            <form>
+                                <h3 class="mb-1 fw-bold">Create account</h3>
+                                <p class="highlight-pink">Note: This is strictly for MTN Subscribers</p>
+                                <div class="mb-3">
+                                    <label>Select your package</label>
+                                    <select class="form-select form-control">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">₦50 Daily</option>
+                                        <option value="2">₦100 Daily</option>
+                                        <option value="3">₦200 Daily</option>
+                                      </select>
+                                </div>
+                                <label>Phone number</label>
+                                <div class="mb-3 countryCode">
+                                    <input name="phone" type="text" id="phone" class="form-control" placeholder="Enter phone number"> 
+                                </div>
+                                <div class="d-grid mb-3">
+                                    <button onclick="location.href='subscribe.html'"
+                                        class="btn btn-primary btn-lg kab-bg-midred border-0 fw-bold"
+                                        type="button">Continue</button>
+                                </div>
+                                <div class="mb-4">
+                                    <p class="small">By continuing, you agree to zanobid's <br><a href="terms.html">Conditions of Use</a> and <a href="privacy-policy.html">Privacy Notice</a></p>
+                                </div>
+                                <hr>
+                                <div class="mb-3">
+                                    <p>Already have an account? <a href="login.html">Sign-In ›</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div w3-include-html="include/footer-login.html"></div> 
+</body>
+
+<script src="js/bootstrap.min5.1.3.js"></script>
+<script src="js/font-awesome.js"></script>
+<script src="js/country-code.js"></script>
+<script src="js/mad.js"></script>
+
+</html>

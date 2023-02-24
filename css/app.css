@@ -1,0 +1,16 @@
+#btn-w:active {
+    background-color: #102684;
+  }
+
+#countdown {
+    font-size: 13.6px;
+}
+
+#countdown-secs {
+    font-size: 13.6px;
+    text-transform: lowercase;
+}
+
+#started {
+    display: none;
+}

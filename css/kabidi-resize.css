@@ -1,0 +1,28 @@
+@media only screen and (min-width: 540px) {
+.kab-product .prod-img img {
+    height: 12rem;
+}
+}
+
+@media only screen and (max-width: 540px) {
+.kab-menu .offcanvas-start {
+    width: 75%;
+}
+}
+
+@media only screen and (max-width: 370px){
+body {
+    zoom: 80%;
+}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+.live-now .row>* {
+    padding-right: calc(var(--bs-gutter-x) * .2);
+    padding-left: calc(var(--bs-gutter-x) * .2);
+} 
+}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+body {zoom: 120%;}
+}
