@@ -94,7 +94,7 @@ myButton.addEventListener('click', () => {
 
   setTimeout(function () {
     myButton.classList.remove("clicked");
-  }, 100);
+  },);
 
   // Add the 'active' class to the button when it's clicked
   myButton.setAttribute('id', 'my-button-active');
@@ -102,7 +102,7 @@ myButton.addEventListener('click', () => {
   // Remove the 'active' class after 1 second to reset the button's state
   setTimeout(() => {
     myButton.setAttribute('id', 'btn-w');
-  }, 100);
+  },);
 });  
     }
   }
