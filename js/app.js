@@ -47,11 +47,11 @@ function updateCountAndWinning() {
 
   // add event listener to bid button to check for clicks
   bidBtn.addEventListener('click', () => {
-    winningEl.textContent = "Chinedu";
+    winningEl.textContent = "batman";
   });
 
   // if the bid button is not clicked, show a random name
-  const names = ["batman","fala69","chinedu", "juliet", "richmond20", "charlie", "davis"];
+  const names = ["fala69","chinedu", "juliet", "richmond20", "charlie", "davis"];
   const randomIndex = Math.floor(Math.random() * names.length);
   winningEl.textContent = names[randomIndex];
 
@@ -79,7 +79,7 @@ function updateTimer() {
 }
 
 // call updateCountAndWinning every 0.05 seconds
-setInterval(updateCountAndWinning, 100);
+setInterval(updateCountAndWinning, 300);
 
 // call updateTimer every second (1000 milliseconds)
 setInterval(updateTimer, 1000);
