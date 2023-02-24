@@ -79,7 +79,7 @@ function updateTimer() {
 }
 
 // call updateCountAndWinning every 0.05 seconds
-setInterval(updateCountAndWinning, 50);
+setInterval(updateCountAndWinning, 100);
 
 // call updateTimer every second (1000 milliseconds)
 setInterval(updateTimer, 1000);
