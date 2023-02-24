@@ -79,7 +79,7 @@ function updateTimer() {
 }
 
 // call updateCountAndWinning every 0.05 seconds
-setInterval(updateCountAndWinning, 300);
+setInterval(updateCountAndWinning, 100);
 
 // call updateTimer every second (1000 milliseconds)
 setInterval(updateTimer, 1000);
@@ -94,7 +94,7 @@ myButton.addEventListener('click', () => {
 
   setTimeout(function () {
     myButton.classList.remove("clicked");
-  },);
+  }, 1000);
 
   // Add the 'active' class to the button when it's clicked
   myButton.setAttribute('id', 'my-button-active');
@@ -102,7 +102,7 @@ myButton.addEventListener('click', () => {
   // Remove the 'active' class after 1 second to reset the button's state
   setTimeout(() => {
     myButton.setAttribute('id', 'btn-w');
-  },);
+  }, 1000);
 });  
     }
   }
