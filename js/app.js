@@ -67,7 +67,7 @@ function updateCountAndWinning() {
 
   // play the sound
   const audio = new Audio("outbid.mp3");
-  audio.play();
+  audio.pause();
 }
 
 // function to update the timer
