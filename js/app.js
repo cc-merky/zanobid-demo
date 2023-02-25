@@ -37,6 +37,20 @@ const clickSound = document.querySelector('#click-sound');
 let count = 0;
 let timer = 600;
 
+const progressBar = document.querySelector('.progress');
+const intervalId = setInterval(() => {
+  count++;
+  if (count > 1000) {
+    clearInterval(intervalId); // stop when progress reaches 100%
+  } else {
+    const newWidth = progressBar.style.width
+      ? parseFloat(progressBar.style.width) + 0.2
+      : 0.2; // start with 0.1% width
+    progressBar.style.width = `${newWidth}%`;
+  }
+}, 100); // update every 100 milliseconds
+
+
 // function to update the count and winning name
 function updateCountAndWinning() {
   // increment count

@@ -278,7 +278,7 @@ body {
 
 .progress-line .progress {
     height: .2rem;
-    width: 80%;
+    width: 100%;
 }
 
 .prod-img {
