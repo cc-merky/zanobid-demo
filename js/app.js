@@ -1,6 +1,9 @@
 // get references to the divs
 const joining = document.getElementById("joining");
 const started = document.getElementById("started");
+const ended = document.getElementById("ended");
+const countEl = document.getElementById("count-w").innerHTML;
+const pricew = document.getElementById("price-w").innerHTML;
 
 
 
@@ -41,7 +44,14 @@ function updateCountAndWinning() {
 
  // format the count with the "₦" symbol
  const formattedCount = "₦" + count.toString();
-  
+
+ // format the count with the "₦" symbol
+ if (formattedCount === "₦30") {
+    started.style.display = "none";
+    ended.style.display = "block";
+  }
+
+
  // update the count element with the formatted count
  countEl.textContent = formattedCount;
 
@@ -58,7 +68,6 @@ function updateCountAndWinning() {
   // play the sound
   const audio = new Audio("outbid.mp3");
   audio.play();
-
 }
 
 // function to update the timer
@@ -119,8 +128,3 @@ setInterval(() => {
   const randomIndex = Math.floor(Math.random() * names.length);
   joinedW.textContent = names[randomIndex];
 }, 3000);
-
-
-
-
-
