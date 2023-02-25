@@ -46,7 +46,7 @@ function updateCountAndWinning() {
  const formattedCount = "₦" + count.toString();
 
  // format the count with the "₦" symbol
- if (formattedCount === "₦30") {
+ if (formattedCount === "₦1000") {
     started.style.display = "none";
     ended.style.display = "block";
   }
