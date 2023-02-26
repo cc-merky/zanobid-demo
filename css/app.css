@@ -1,3 +1,7 @@
+body {
+    touch-action: pan-y;
+}
+
 #btn-w:active {
     background-color: #102684;
   }
