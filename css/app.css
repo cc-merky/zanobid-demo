@@ -6,6 +6,14 @@ body {
     background-color: #102684;
   }
 
+  #btn-w.clicked {
+    background-color: #102684;
+  }
+
+  #btn.touchstart {
+    background-color: #102684;
+  }
+
 #countdown {
     font-size: 13.6px;
 }

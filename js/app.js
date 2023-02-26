@@ -73,7 +73,9 @@ function updateCountAndWinning() {
   bidBtn.addEventListener('click', () => {
     winningEl.textContent = "batman";
   });
-
+  bidBtn.addEventListener('touchstart', () => {
+    winningEl.textContent = "batman";
+  });
   // if the bid button is not clicked, show a random name
   const names = ["fala69","chinedu", "juliet", "richmond20", "charlie", "davis"];
   const randomIndex = Math.floor(Math.random() * names.length);
@@ -126,7 +128,24 @@ myButton.addEventListener('click', () => {
   setTimeout(() => {
     myButton.setAttribute('id', 'btn-w');
   }, 1000);
-});  
+});
+myButton.addEventListener('touchstart', () => {
+  var audio = new Audio("bid.mp3");
+  audio.play();
+  myButton.classList.add("clicked");
+
+  setTimeout(function () {
+    myButton.classList.remove("clicked");
+  }, 1000);
+
+  // Add the 'active' class to the button when it's clicked
+  myButton.setAttribute('id', 'my-button-active');
+
+  // Remove the 'active' class after 1 second to reset the button's state
+  setTimeout(() => {
+    myButton.setAttribute('id', 'btn-w');
+  }, 1000);
+});
     }
   }
 }, 1000);
