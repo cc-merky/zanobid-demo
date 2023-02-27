@@ -16,10 +16,6 @@ body {
 
 #countdown {
     font-size: 13.6px;
-}
-
-#countdown-secs {
-    font-size: 13.6px;
     text-transform: lowercase;
 }
 

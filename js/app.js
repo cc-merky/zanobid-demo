@@ -9,46 +9,66 @@ const pricew = document.getElementById("price-w").innerHTML;
 
 
 
-// set the countdown timer
-let countdown = 10;
-const countdownEl = document.getElementById("countdown");
-countdownEl.textContent = countdown;
+// Set the target time to 3:10am
+const targetTime = new Date();
+targetTime.setHours(16, 0, 0, 0);
 
-const intervalId = setInterval(() => {
-  countdown--;
-  countdownEl.textContent = countdown;
-  
-  // when the countdown reaches 0, stop the interval and start the bidding
-  if (countdown === 0) {
-    clearInterval(intervalId);
+// Update the countdown every second
+const stopintervalId = setInterval(() => {
+  // Calculate the time remaining until the target time
+  const now = new Date();
+  const timeRemaining = targetTime.getTime() - now.getTime();
+
+  // Convert the time remaining to hours, minutes, and seconds
+  const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+  // Display the countdown in the HTML element with ID "countdown"
+  const countdownElement = document.getElementById("countdown");
+  if (hours > 0) {
+    countdownElement.innerHTML = `${hours}h${minutes.toString().padStart(2, '0')}m${seconds.toString().padStart(2, '0')}s`;
+  } else if (minutes > 0) {
+    countdownElement.innerHTML = `${minutes}m${seconds.toString().padStart(2, '0')}s`;
+  } else if (seconds > 0) {
+    countdownElement.innerHTML = `${seconds}s`;
+  } else {
+    clearInterval(stopintervalId);
     startWhenCountdownEnds();
     joining.style.display = "none";
     started.style.display = "block";
     function startWhenCountdownEnds() {
         // get elements from the HTML
-const countEl = document.getElementById("count-w");
-const timerEl = document.getElementById("timer-w");
-const winningEl = document.getElementById("winning-w");
-const bidBtn = document.getElementById("btn-w");
-const myButton = document.querySelector('#btn-w');
-const clickSound = document.querySelector('#click-sound');
+    const countEl = document.getElementById("count-w");
+    const timerEl = document.getElementById("timer-w");
+    const winningEl = document.getElementById("winning-w");
+    const bidBtn = document.getElementById("btn-w");
+    const myButton = document.querySelector('#btn-w');
+    const clickSound = document.querySelector('#click-sound');
 
-// initialize count and timer
-let count = 0;
-let timer = 600;
+    // initialize count and timer
+    let count = 0;
+    let timer = 600;
 
-const progressBar = document.querySelector('.progress');
-const intervalId = setInterval(() => {
-  count++;
-  if (count > 1000) {
-    clearInterval(intervalId); // stop when progress reaches 100%
-  } else {
-    const newWidth = progressBar.style.width
-      ? parseFloat(progressBar.style.width) + 0.2
-      : 0.2; // start with 0.1% width
-    progressBar.style.width = `${newWidth}%`;
-  }
-}, 100); // update every 100 milliseconds
+    const progressBar = document.querySelector('.progress');
+    const intervalId = setInterval(() => {
+      count++;
+      if (count > 1000) {
+        clearInterval(intervalId); // stop when progress reaches 100%
+      } else {
+        const newWidth = progressBar.style.width
+          ? parseFloat(progressBar.style.width) + 0.2
+          : 0.2; // start with 0.1% width
+        progressBar.style.width = `${newWidth}%`;
+      }
+  
+}, 1000); // 1000ms = 1 second
+
+
+
+
+
+
 
 
 // function to update the count and winning name
@@ -70,9 +90,6 @@ function updateCountAndWinning() {
  countEl.textContent = formattedCount;
 
   // add event listener to bid button to check for clicks
-  bidBtn.addEventListener('click', () => {
-    winningEl.textContent = "batman";
-  });
   bidBtn.addEventListener('touchstart', () => {
     winningEl.textContent = "batman";
   });
@@ -112,23 +129,7 @@ setInterval(updateTimer, 1000);
 
 
 // Button Button Button Button Button Button
-myButton.addEventListener('click', () => {
-  var audio = new Audio("bid.mp3");
-  audio.play();
-  myButton.classList.add("clicked");
 
-  setTimeout(function () {
-    myButton.classList.remove("clicked");
-  }, 1000);
-
-  // Add the 'active' class to the button when it's clicked
-  myButton.setAttribute('id', 'my-button-active');
-
-  // Remove the 'active' class after 1 second to reset the button's state
-  setTimeout(() => {
-    myButton.setAttribute('id', 'btn-w');
-  }, 1000);
-});
 myButton.addEventListener('touchstart', () => {
   var audio = new Audio("bid.mp3");
   audio.play();
@@ -154,7 +155,7 @@ myButton.addEventListener('touchstart', () => {
 
 
 
-const names = ["batman","fala69","chinedu", "juliet", "richmond20", "charlie", "davis"];
+const names = ["fala69","chinedu", "juliet", "richmond20", "charlie", "davis"];
 const joinedW = document.getElementById('joined-w');
 
 setInterval(() => {
