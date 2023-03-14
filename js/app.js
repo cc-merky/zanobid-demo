@@ -11,7 +11,7 @@ const pricew = document.getElementById("price-w").innerHTML;
 
 // Set the target time to 3:10am
 const targetTime = new Date();
-targetTime.setHours(12, 20, 0, 0);
+targetTime.setHours(12, 24, 0, 0);
 
 // Update the countdown every second
 const stopintervalId = setInterval(() => {
